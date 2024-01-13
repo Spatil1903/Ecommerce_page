@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="ecommerce_style.css">
+    <link href="ecommerce_style.css" rel= "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/brands.min.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="nav-logo border">
+                <div class="logo">
+                   </div>
+                </div>
+            <div class="nav-address border">
+                <p class="add-first">Deliver to</p>
+                <div class="add-icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p class="add-second">India</p>
+            </div>
+            </div>
+            <div class="nav-search">
+
+                <select class="search-select">
+                    <option>All</option>  
+                </select>
+                <input placeholder="search Amazon" class="search-input">
+                <div class="search-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+        
+
+        <div class="nav-signin border" >
+            <p><span>Hello,sign in</span></p>
+            <p class="nav-second"> Account & Lists</p>
+        </div>
+        <div class ="nav-returns border" >
+            <p><span>Returns</span></p>
+            <p class="nav-second"> & Orders</p>
+        </div>
+        <div class="nav-cart border"> 
+            <i class="fa-solid fa-cart-shopping"></i>
+            Cart
+        </div>
+    </div>
+    <div class="panel">
+        <div class="panel-all">
+            <i class="fa-solid fa-bars"></i>
+            All
+        </div>
+        <div class="panel-ops">
+            <p>Today's Deals</p>
+              <p> Customer Service's</p>  
+               <p> registry</p>
+                <p> Gift Cards</p>
+               <p>Sell</p>
+            
+        </div>
+        <div class="panel-deals"> 
+            Shop deals in Electronics
+        </div>
+    </div>
+    
+    </header>
+    <div class="hero">
+        <div class="row">
+            <div class="col">
+                          <div class="slider">
+                                 <div class="product">
+                           <img src="img5.jpg" alt="" onclick="clickme(this)">
+                           <img src="img2.jpg" alt="" onclick="clickme(this)">
+                            <img src="img3.jpg" alt="" onclick="clickme(this)"> 
+                             <img src="img3.jpg" alt="" onclick="clickme(this)">
+                             
+                    </div>
+                    <div class="preview">
+                        <img src="coord_set.jpg"  id="imagebox" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="content">
+                    <p class="brand">Brand:Varanga</p>
+                    <h2>
+                        GRECIILOOKS Women Co Ord Set| Collared Self Belted Allover Print| Half Sleeve Shirt| Straight Shirt with Belt| Women Two-Piece Outfits| Summer Wear| Outdoor Wear
+                    </h2>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half"></i>
+                        <i class="fa-regular fa-star"></i>
+                        
+                    </div>
+                    <div class="price"> USD $800</div>
+                    <p>Size: <select name="size" id="">
+                        <option value="select size">Select Size</option>
+                        <option value="small">Small</option>
+
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+
+                    </select></p>
+                    <p>Quantity<input type="text" value="1"></p>
+                    <button type="button">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="related"><h2>
+            Related Items
+        </h2>
+    <div class="row">
+        <div class="columns">
+            <div class="items">
+                <img src="related1.jpg" alt="">
+                <div class="details">
+                    <p>Comfortable Maxi Shirt Dress</p>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half"></i>
+                        <i class="fa-regular fa-star"></i>
+                        
+                    </div>
+                    <p> USD $120.00</p>
+                </div>
+            </div>
+        </div>
+        <div class="columns">
+            <div class="items">
+                <img src="related2.jpg" alt="">
+                <div class="details">
+                    <p>DEEBACO Women's Fit & Flare Maxi Dress</p>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half"></i>
+                        <i class="fa-regular fa-star"></i>
+                        
+                    </div>
+                    <p> USD $230.00</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="columns">
+            <div class="items">
+                <img src="related3.jpg" alt="">
+                <div class="details">
+                    <p>Uptownie Lite Women's Shirt Maxi Dres</p>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half"></i>
+                        <i class="fa-regular fa-star"></i>
+                        
+                    </div>
+                    <p> USD $200.00</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="columns">
+            <div class="items">
+                <img src="related4.jpg" alt="">
+                <div class="details">
+                    <p>MIRCHI FASHION Women's Straight Fit Fancy Cotton Printed Kurti</p>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half"></i>
+                        <i class="fa-regular fa-star"></i>
+                        
+                    </div>
+                    <p> USD $450.00</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+    </div>
+
+<script>
+    function clickme(smallImg){
+        var fullImg  = document.getElementById("imagebox");
+        fullImg.src=smallImg.src;
+
+    }
+</script>
+
+<footer>
+    <div class="foot-panel1">
+        Back to Top
+    </div>
+    <div class="foot-panel2">
+        <ul>
+            <p>Get to Know Us</p>
+            <a>Careers</a>
+            <a>Blog</a>
+            <a>About Amazon</a>
+            <a>Investor Relations</a>
+            <a>Amazon Devices</a>
+            <a>Amazon Sience</a>
+        </ul>
+
+        <ul>
+            <p>Get to Know Us</p>
+            <a>Careers</a>
+            <a>Blog</a>
+            <a>About Amazon</a>
+            <a>Investor Relations</a>
+            <a>Amazon Devices</a>
+            <a>Amazon Sience</a>
+        </ul>
+        
+
+        <ul>
+            <p>Get to Know Us</p>
+            <a>Careers</a>
+            <a>Blog</a>
+            <a>About Amazon</a>
+            <a>Investor Relations</a>
+            <a>Amazon Devices</a>
+            <a>Amazon Sience</a>
+        </ul>
+
+
+        <ul>
+            <p>Get to Know Us</p>
+            <a>Careers</a>
+            <a>Blog</a>
+            <a>About Amazon</a>
+            <a>Investor Relations</a>
+            <a>Amazon Devices</a>
+            <a>Amazon Sience</a>
+        </ul>
+    </div>
+    <div class="foot-panel3">
+        <div class="logo">
+
+        </div>
+    </div>
+    <div class="foot-panel4">
+        <div class="pages">
+            <a>Conditions of Use</a>
+            <a>Privacy Notice</a>
+            <a>Your Ads Privacy Choices</a>
+
+
+        </div>
+        <div class="Copyright">
+            @ 1996-2023,Amazon.com,Inc.or its affiliates
+        </div>
+    </div>
+</footer>
+
+
+</body>
+</html>
